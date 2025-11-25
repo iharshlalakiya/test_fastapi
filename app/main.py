@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from .routers import unit1, unit2, unit3, unit4, unit5
-from app.main import app as app
 
 app = FastAPI(version="1.0.0")
 

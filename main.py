@@ -19,8 +19,8 @@ def unit1():
         print("\nEnter elements (space separated) for Matrix A:")
         A = []
         for i in range(n):
-        row = list(map(int, input(f"Row {i+1}: ").split()))
-        A.append(row)
+            row = list(map(int, input(f"Row {i+1}: ").split()))
+            A.append(row)
         A = np.array(A)
 
         # Input elements for Matrix B
@@ -28,8 +28,8 @@ def unit1():
         B = []
 
         for i in range(n):
-        row = list(map(int, input(f"Row {i+1}: ").split()))
-        B.append(row)
+            row = list(map(int, input(f"Row {i+1}: ").split()))
+            B.append(row)
         B = np.array(B)
 
         # Multiply A and B
@@ -50,16 +50,16 @@ def unit1():
         print("\nEnter elements (space separated) for the matrix:")
         M = []
         for i in range(m):
-        row = list(map(float, input(f"Row {i+1}: ").split()))
-        M.append(row)
+            row = list(map(float, input(f"Row {i+1}: ").split()))
+            M.append(row)
         M = np.array(M)
 
         # Compute and print inverse
         try:
-        inverse_M = np.linalg.inv(M)
-        print(f"\nResult of Inverse of the Matrix:\n{inverse_M}")
+            inverse_M = np.linalg.inv(M)
+            print(f"\nResult of Inverse of the Matrix:\n{inverse_M}")
         except np.linalg.LinAlgError:
-        print("Matrix is singular and cannot be inverted.")
+            print("Matrix is singular and cannot be inverted.")
         """).strip(),
         media_type="text/plain",
         headers={"Cache-Control": "no-store"}
